@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, rgba(244,133,235,1) 0%, rgba(191,148,233,1) 100%);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10%;
+}
+
+h2 {
+  margin: 6px 0 10px 0;
+}
+.input-wrapper {
+  height: 46px;
+  margin-bottom: 20px;
+}
+#description-task{
+  width: 300px;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+#add-task-btn {
+  color: #fff;
+  background-color: rgb(79, 21, 228);
+  font-size: 1rem;
+  width: 167px;
+  padding: 5px 0;
+  box-shadow: rgba(0, 0, 255, .4) 0 4px 7px 3px;
+  margin-bottom: 10px;
+}
+
+.add-todo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.todo-item {
+  display: flex;
+  background: rgb(150, 75, 220);
+  border: 1px solid rgb(68, 4, 88);
+  border-radius: 5px;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: rgba(125, 74, 137, 0.5) 0 4px 7px 3px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.buttons{
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description {
+  display: flex;
+  width: 70%;
+}
+
+.btn-delete {
+  background: rgb(238, 15, 89);
+  color: #FFF;
+  padding: 5px 10px;
+}
+
+
+
+.todo-item.checked {
+  background-color: rgb(125, 123, 123, .3);
+}
+
+.todo-item.checked > .description {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.todo-item.delition {
+  animation: opacity 2s ease-in-out;
+}
+
+
+/* .buttons {
+  display: flex;
+  cursor: pointer;
+} */
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+

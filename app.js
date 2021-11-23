@@ -5,7 +5,7 @@ const toDosWrapper = document.querySelector('.todos-wrapper');
 const date = document.getElementById('date');
 const currentDate = new Date();
 
-date.innerHTML = currentDate;
+date.innerHTML = currentDate.toDateString();
 
 let tasks;
 !localStorage.tasks ? tasks =[] : tasks = JSON.parse(localStorage.getItem('tasks'));
